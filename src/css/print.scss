@@ -1,0 +1,8 @@
+@media print {
+  .none-print, iframe {
+    display: none;
+  }
+  .content a {
+    color: #040808;
+  }
+}
