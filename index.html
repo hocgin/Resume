@@ -43,7 +43,7 @@
                 <div class="link-item">
                     <a href="#" class="hint--right" aria-label="期望城市">
                         <i class="icon-location-outline"></i>
-                        <span>厦门/杭州</span>
+                        <span>杭州</span>
                     </a>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                 <dd>
                     <strong>自我评价</strong>
                     <span>
-                        参与过多个项目开发，涉及电商、物流、公众号等，能够熟练进行服务器维护。为人认真、诚恳，热爱技术，日常在GitHub/GitLab开坑，轻微代码强迫症..
+                        参与多类项目开发，涉及公众号、出行、电商、物流等，能够熟练进行服务器维护。
                     </span>
                 </dd>
             </li>
@@ -95,14 +95,24 @@
                 <ul class="exp">
                     <li>
                         <div class="circle"></div>
-                        <h4>项目的研发</h4>
+                        <h4>长链接类型项目</h4>
                         <p>
-                            - 负责和维护长链接项目，主要通过 Netty 建立连接硬件或移动设备, 并且通过协议来处理司机位置信息以及消息包推送。并且通过 dubbo 和 zookeeper 向外提供服务
+                            - 负责开发和维护长链接项目，该项目主要使用 Netty、Mongo。通过自定义协议来处理司机位置信息以及消息包推送等相关操作并且通过使用 Dubbo 向外提供服务。
                         </p>
-                        <p>- 负责微信公众号出行类项目的架构，前端架构主要使用 mobile antd 和 高德地图, 后端主要使用 SSM 进行开发</p>
-                        <p>- 基于原有 API 设计和实现 APP 嵌入式页面的方式(包括授权方案和与 Native 的交互方式)</p>
+                        <p>- 同样的项目还有分时租赁(类似租车)的长链接项目。</p>
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>微信公众号类型项目</h4>
+                        <p>- 负责该项目所有微信相关的业务开发(包括前后端)，前端主要使用基于 Mobile Antd 体系和高德地图，后端主要使用 SSM 体系进行开发，由于微信公众号项目是单独项目，因此其他项目使用微信相关功能时(如:模版消息等)会通过 Dubbo 进行调用实现。</p>
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>其他项目的研发</h4>
+                        <p>- 基于原有移动端 API 进行设计，推出和实现 APP 嵌入式页面的方案(包括授权方案和与 Native 的交互方式)</p>
                         <p>- 设计和接入人脸识别的方案(阿里/百度)</p>
-                        <p>- 项目架构方案的设计和搭建</p>
+                        <p>- 针对网约车项目推单业务进行优化(引入MQ和缓存方案)</p>
+                        <p>- 参与项目架构方案的设计和搭建</p>
                     </li>
                     <li>
                         <div class="circle"></div>
@@ -119,12 +129,10 @@
                     <li>
                         <div class="circle"></div>
                         <h4>工作内容</h4>
-                        <p>
-                            - 负责主项目结构化改造 <br/>
-                            - 基于 Docker 搭建 Jenkins 的 CI/CD <br/>
-                            - 日常业务开发和维护 <br/>
-                            - 人员面试和开发指导 <br/>
-                        </p>
+                        <p>- 负责主项目结构化改造，从传统的本地 lib 项目到标准的 maven 项目</p>
+                        <p>- 基于 Docker 搭建 Jenkins 的 CI/CD</p>
+                        <p>- 日常业务开发和维护</p>
+                        <p>- 人员面试和开发指导</p>
                     </li>
                 </ul>
                 <h3 class="exp-title">
@@ -134,9 +142,9 @@
                     <li>
                         <div class="circle"></div>
                         <h4>消息系统</h4>
+                        <p>- 负责消息模块的设计和编码，包含类短信发送，APP推送，邮件发送以及前后端人员站内消息，为整个系统消息服务。</p>
                         <p>
-                            负责消息模块的设计和编码，包含类短信发送，APP推送，邮件发送以及前后端人员站内消息，为整个系统消息服务。
-                            使用了消息分发的机制， 可以准确的对消息进行分发。但是由于前端使用的是轮询机制而不是 Socket 连接，对低版本浏览器兼容好， 目前基本适用当前环境。
+                            - 使用了消息分发的机制， 可以准确的对消息进行分发。但是由于前端使用的是轮询机制而不是 Socket 连接，对低版本浏览器兼容好， 目前基本适用当前环境。
                             <a class="none-print" href="https://hocg.in/2016/07/30/%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1%E4%B9%8B%E6%B6%88%E6%81%AF%E6%A8%A1%E5%9D%97/"><i class="icon-link"></i>思路点这里</a>
                         </p>
                     </li>
@@ -144,7 +152,7 @@
                         <div class="circle"></div>
                         <h4>同步订单模块</h4>
                         <p>
-                            负责和第三方平台进行对接，通过使用 OAuth 2.0 进行授权后拉取用户订单，并进行通知。
+                            - 负责和第三方平台进行对接，通过使用 OAuth 2.0 进行授权后拉取用户订单，并进行通知。
                             <a class="none-print" href="https://hocg.in/2016/08/02/%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1%E4%B9%8B%E5%AF%B9%E6%8E%A5%E5%90%8C%E6%AD%A5%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97/"><i class="icon-link"></i>思路点这里</a>
                         </p>
                     </li>
@@ -152,14 +160,14 @@
                         <div class="circle"></div>
                         <h4>服务器搭建</h4>
                         <p>
-                            负责重新搭建服务端框架，使用 Nginx 配置和使用 gzip，编写和配置路由规则等。架设 Redis 并在 Tomcat 配置了 tomcat-redis-session-manager 用于在多台服务器之间实现 Session 共享。同时使用 Jenkins，通过配置和使用 Shell 脚本对多台服务器进行部署管理和切换。
+                            - 负责重新搭建服务端框架，使用 Nginx 配置和使用 gzip，编写和配置路由规则等。架设 Redis 并在 Tomcat 配置了 tomcat-redis-session-manager 用于在多台服务器之间实现 Session 共享。同时使用 Jenkins，通过配置和使用 Shell 脚本对多台服务器进行部署管理和切换。
                         </p>
                     </li>
                     <li>
                         <div class="circle"></div>
                         <h4>微信公众号开发</h4>
                         <p>
-                            接手搭建和部署整个微信的框架，采用 SSH 整合文件系统及常用的接口开发，适用于微信的授权及 JS 相关的页面开发。
+                            - 负责开发和部署整个微信的框架，采用 SSH 整合文件系统及常用的接口开发，适用于微信的授权及 JS 相关的页面开发。
                         </p>
                     </li>
                 </ul>
@@ -170,8 +178,8 @@
                     <li>
                         <div class="circle"></div>
                         <h4>电商平台</h4>
-                        <p>负责PC的前端和后端开发, 涵盖了购物车模块，订单业务，商品模块及内容模块等功能</p>
-                        <p>项目前端使用 Boostrap, 后端使用 PHP Laravel 框架, 数据库采用的是 MySQL</p>
+                        <p>- 负责PC的前端和后端开发, 涵盖了购物车模块，订单业务，商品模块及内容模块等功能</p>
+                        <p>- 项目前端使用 Boostrap, 后端使用 PHP Laravel 框架, 数据库采用的是 MySQL</p>
                     </li>
                 </ul>
             </li>
@@ -205,29 +213,29 @@
                     <li>
                         <div class="circle"></div>
                         <h4>Java</h4>
-                        <p>能够熟练的使用 Java 进行 OO、AOP 编码</p>
-                        <p>熟悉 Guava 以及 Streams API 的使用</p>
-                        <p>掌握和了解设计模式、应用架构模式、JVM、以及线程池</p>
+                        <p>- 能够熟练的使用 Java 进行 OO、AOP 编码</p>
+                        <p>- 熟悉 Guava 以及 Streams API 的使用</p>
+                        <p>- 掌握和了解设计模式、应用架构模式、JVM、以及线程池</p>
                     </li>
                     <li>
                         <div class="circle"></div>
                         <h4>Spring 体系</h4>
-                        <p>能够熟练使用 Spring Boot，了解 Spring Boot 的基本原理</p>
-                        <p>拥有使用 Quartz、WebSocket、消息队列、Spring Security、Session 共享等各项技术的开发经验</p>
-                        <p>熟悉使用 Hibernate、JPA、MyBatis 等技术进行持久化操作</p>
-                        <p>拥有 MySQL、Redis、MongoDB 等存储架构开发经验，能够使用注解方式对数据进行缓存处理</p>
-                        <p>掌握和了解 Spring Cloud(Alibaba/Netflix) 的使用</p>
-                        <p>能够使用 JUnit 进行单元测试</p>
-                        <p>了解一些应用安全和优化方面的知识</p>
+                        <p>- 能够熟练使用 Spring Boot，了解 Spring Boot 的基本原理</p>
+                        <p>- 拥有使用 Quartz、WebSocket、消息队列、Spring Security、Session 共享等各项技术的开发经验</p>
+                        <p>- 熟悉使用 Hibernate、JPA、MyBatis 等技术进行持久化操作</p>
+                        <p>- 拥有 MySQL、Redis、MongoDB 等存储架构开发经验，能够使用注解方式对数据进行缓存处理</p>
+                        <p>- 掌握和了解 Spring Cloud(Alibaba/Netflix) 的使用</p>
+                        <p>- 能够使用 JUnit 进行单元测试</p>
+                        <p>- 了解一些应用安全和优化方面的知识</p>
                     </li>
                     <li>
                         <div class="circle"></div>
                         <h4>其他</h4>
-                        <p>熟悉 Maven、Gradle、Jenkins、Docker 等 DevOps 工具</p>
-                        <p>能够熟练的对 Linux 进行操作</p>
-                        <p>能够使用一些 XXL-Job、Apollo 等开源项目</p>
-                        <p>了解和使用 Nginx、Ngrok、Tomcat、Git、RocketMQ</p>
-                        <p>了解 OAuth2.0 认证、TCP/IP、HTTP 协议以及 RESTful API 规范</p>
+                        <p>- 熟悉 Maven、Gradle、Jenkins、Docker 等 DevOps 工具</p>
+                        <p>- 能够熟练的对 Linux 进行操作</p>
+                        <p>- 能够使用一些 XXL-Job、Apollo 等开源项目</p>
+                        <p>- 了解和使用 Nginx、Ngrok、Tomcat、Git、RocketMQ</p>
+                        <p>- 了解 OAuth2.0 认证、TCP/IP、HTTP 协议以及 RESTful API 规范</p>
                     </li>
                 </ul>
                 <h3 class="exp-title">
@@ -236,23 +244,10 @@
                 <ul class="exp">
                     <li>
                         <div class="circle"></div>
-                        <h4>HTML/CSS</h4>
-                        <p>能够模块化编写 HTML 与 CSS，完成较复杂的布局</p>
-                        <p>能够熟练使用 Less、Sass 等工具</p>
-                        <p>拥有 Bootstrap、Layer、iView、Antd 等框架经验</p>
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>JavaScript</h4>
-                        <p>能够熟练使用原生 JavaScript 与 JQuery 进行编码</p>
-                        <p>能够运用模块化及面向对象的编程方式</p>
-                        <p>掌握和了解 ES6、Vue、React、EChart 及其他库的使用</p>
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>其他</h4>
-                        <p>熟悉 Webpack、Gulp 等自动化工具</p>
-                        <p>了解前端一些前端安全和优化方面的知识</p>
+                        <h4>简单描述一下</h4>
+                        <p>- 能够熟练的进行前端项目的开发，使用过目前主流的前端框架，包括但不限于 React、Vue、JQuery等框架，并且能够使用 Less、Sass 等 CSS 编译工具，同时也接触过一些自动化工具，比如: Webpack、Gulp、Umi等</p>
+                        <p>- 接触过 Antd、LayerUI、Bootstrap、iView 等 UI 框架</p>
+                        <p>- 了解一些前端安全和优化方面的知识</p>
                     </li>
                 </ul>
             </li>
@@ -280,7 +275,7 @@
     <p>
         在线浏览 <a class="static" href="https://resume.hocg.in" target="_blank">https://resume.hocg.in</a>.
         更新于 2019年04月09日.
-        <a class="static" href="resume.pdf" target="_blank">PDF 下载</a>
+        <a class="static" href="简历.pdf" target="_blank">PDF 下载</a>
     </p>
 </footer>
 <!-- Place this tag in your head or just before your close body tag. -->
