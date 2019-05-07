@@ -1,18 +1,40 @@
 @import "print";
+
 * {
   margin: 0;
   padding: 0;
 }
+
 html {
-  font-family: PingFang TC,Avenir Next,Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+  font-family: PingFang TC, Avenir Next, Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
 }
+
 body {
   min-width: 1080px;
+  @media (min-width: 1060px) {
+    font-size: 18px;
+  }
 }
+p {
+  line-height: 20px;
+  margin: 0 0 5px;
+  word-break: normal;
+  word-wrap: break-word;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+
 .container {
   position: relative;
   margin: 0 auto;
-  width: 1060px;
+  width: 100%;
+  @media (min-width: 1060px) {
+    max-width: 1060px;
+  }
+
   .top {
     background: #040808;
     height: 220px;
@@ -60,7 +82,7 @@ body {
             }
           }
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           .link-item {
             padding-top: 5px;
           }
@@ -94,7 +116,7 @@ body {
         iframe {
           margin-bottom: -4px;
         }
-        &.basic-mail a{
+        &.basic-mail a {
           color: #000;
           &:hover {
             color: #E1E8E8;
@@ -118,7 +140,7 @@ body {
         position: relative;
         top: -5px;
         margin: 0 0 20px 20px;
-        &.top-zero{
+        &.top-zero {
           top: 0;
         }
       }
@@ -147,6 +169,7 @@ body {
     top: 5px;
   }
 }
+
 a {
   color: #E1E8E8;
   &:hover {
@@ -156,6 +179,7 @@ a {
     color: #040808;
   }
 }
+
 footer {
   p {
     color: #616161;
@@ -168,6 +192,7 @@ footer {
   display: inline-block;
   animation: animation-heartbeat 1300ms ease 0s infinite normal;
 }
+
 @keyframes animation-heartbeat {
   0% {
     transform: scale(1);
