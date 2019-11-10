@@ -1,0 +1,32 @@
+@media screen {
+  dt .doc-title {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 15px;
+      background-color: rgba(255, 255, 255, .5);
+      transform: rotate(-45deg);
+      animation: lightning 1s ease-in 1s infinite;
+    }
+  }
+
+}
+
+/**
+ * 闪光
+ */
+@keyframes lightning {
+  0% {
+    left: -100px;
+    top: 0;
+  }
+  to {
+    left: 120px;
+    top: 100px;
+  }
+}

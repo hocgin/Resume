@@ -1,4 +1,5 @@
 @import "print";
+@import "noprint";
 
 * {
   margin: 0;
@@ -127,6 +128,7 @@ h4 {
     dt {
       font-size: 24px;
       border-bottom: solid 1px #E1E8E8;
+      display: flex;
     }
     .exp-title {
       margin-top: 30px;
