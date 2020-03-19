@@ -20,4 +20,4 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: .
-        BUILD_SCRIPT: npm install && gulp default
+        BUILD_SCRIPT: npm install && npm run build

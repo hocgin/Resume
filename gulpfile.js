@@ -34,3 +34,4 @@ gulp.task('watch', function () {
 
 // Default task, running just `gulp` will move font, compress js and scss, start server, watch files.
 gulp.task('default', ['compressCSS', 'browser-sync', 'watch']);
+gulp.task('build', ['compressCSS']);
