@@ -13,10 +13,14 @@ jobs:
     - name: Checkout Actions
       uses: actions/checkout@v2
 
-    - name: Push
-      uses: JamesIves/github-pages-deploy-action@releases/v2
-      env:
+    - name: Install 🔧
+      run: |
+        npm install
+        npm run build
+
+    - name: Build and Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BASE_BRANCH: master
         BRANCH: gh-pages
-        BUILD_SCRIPT: npm install && npm run build
