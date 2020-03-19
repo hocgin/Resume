@@ -19,5 +19,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BASE_BRANCH: master
         BRANCH: gh-pages
-        FOLDER: dist
+        FOLDER: ./
         BUILD_SCRIPT: npm install && gulp default
