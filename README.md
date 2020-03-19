@@ -1,6 +1,6 @@
 ## Resume
 参照设计模版: [简历模版](https://xituqu.com/678.html)  
-在线简历: [http://hocg.in/Resume](http://hocg.in/Resume)
+在线简历: [https://resume.hocg.in](http://resume.hocg.in)
 
 ## 快速启动
 > 老古董项目，请注意切换 node 版本
