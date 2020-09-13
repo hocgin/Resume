@@ -13,7 +13,7 @@ class Index extends React.PureComponent<Props, State> {
   render(): JSX.Element {
     let {children} = this.props;
     return (<div className={styles.component}>
-      <div>{children}</div>
+      <div className={styles.text}>{children}</div>
     </div>);
   }
 }

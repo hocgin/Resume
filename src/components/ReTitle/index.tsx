@@ -1,8 +1,11 @@
 import React from 'react';
+import {BookFilled} from '@ant-design/icons';
+
 import styles from './index.less';
 
 type Props = {
-  children?: (JSX.Element | string);
+  title?: string,
+  href?: string,
 }
 
 type State = {};
@@ -11,9 +14,10 @@ class Index extends React.PureComponent<Props, State> {
   static defaultProps = {};
 
   render(): JSX.Element {
-    let {children} = this.props;
+    let {title} = this.props;
     return (<div className={styles.component}>
-      <div>{children}</div>
+      <BookFilled/>
+      <div className={styles.title}>{title}</div>
     </div>);
   }
 }
